@@ -37,7 +37,9 @@ GND | GND
 
 If you are interested in a quick showcase of what you can expect to see if you setup the hardware and software correctly, check out this video. 
 
-Additionally, it quickly covers how to display any custom values you may want. This is covered quickly below as well. If you are going to expand upon the library here, I recommend this section of the video to pick up a basic understanding of the device's operation. Timestamp:
+[![Video](https://img.youtube.com/vi/IoSwCAQD2_o/0.jpg)](https://www.youtube.com/watch?v=IoSwCAQD2_o)
+
+Additionally, it quickly covers how to display any custom values you may want. This is covered quickly below as well. If you are going to expand upon the library here, I recommend this section of the video to pick up a basic understanding of the device's operation. Timestamp: [Video Explanation](https://youtu.be/IoSwCAQD2_o?t=39)
 
 
 ## Custom Display Values
