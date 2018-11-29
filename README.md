@@ -13,7 +13,7 @@ Once done, be sure to check line 6 in the test file:
 ```
 display = tm1637_alt.TM1637(CLK=23, DIO=24, brightness=2.0)
 ```
-Set the value of CLK and DIO to whichever Pi GPIO pins you have used. If you watched the video linked below and wired the TM1637 to the Pi the same way, this will work as is.
+Set the value of CLK and DIO to whichever Pi GPIO pins you have used. If you copy the hardware setup below, this will work as is.
 
 ### Running
 
@@ -22,14 +22,23 @@ Navigate into the directory where you have stored the files you just downloaded.
 sudo python3 tm1637_exploration.py
 ```
 
+### Hardware Setup
+
+Pretty straight-forward here. You can use any GPIO pins for CLK and DIO so long as you set them up correctly as shown above. No need for external power supply, the Pi 5V and ground works just fine.
+
+PI | TM1637 Display
+--- | --- 
+GPIO 23 | CLK
+GPIO 24 | DIO
+5V | 5V
+GND | GND
+
 ## Video
 
-If you are interested in a basic tutorial of how I setup the hardware to run the test program, feel free to check out the video below.
+If you are interested in a quick showcase of what you can expect to see if you setup the hardware and software correctly, check out this video. 
 
+Additionally, it quickly covers how to display any custom values you may want. This is covered quickly below as well. If you are going to expand upon the library here, I recommend this section of the video to pick up a basic understanding of the device's operation. Timestamp:
 
-The video gives a quick showcase of what you can expect to see if you setup the hardware and software correctly as well. Timestamp: 
-
-Additionally, it quickly covers how to display any custom values you may want, assuming the hex digits are not enough. This is covered quickly below as well. Timestamp:
 
 ## Custom Display Values
 
