@@ -24,5 +24,7 @@ sudo python3 tm1637_exploration.py
 
 ## Video Explanation
 
-If you are interested in a basic tutorial of how the TM1637 operates, as well as how to go about creating your own custom functionality with the device, take a look at the video below.
-The video also includes visuals of how I setup the Pi and TM1637 to run the test program if you are interested.
+If you are interested in a basic tutorial of how I setup the hardware to run the test program, feel free to check out the video below.
+
+## Custom Display Values
+
