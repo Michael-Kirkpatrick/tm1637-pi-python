@@ -61,10 +61,12 @@ Now that you have the hex value you want, you need to know how to actually write
 
 *Note: This rundown uses the writeByte, start, stop, and br (terse break) functions already included in the library to make it simple. If for any reason you would like to know the exact values being passed at any time, you can do so by reading the functions in the library, or by checking the TM1637 datasheet for more information.*
 
-1. Start the data transfer. We are going to write in auto increment mode.
+1. Start the data transfer. We are going to write in auto increment mode like the "Show" function.
 2. Write the first command to signal for writing data to display register (0x40), then break. Write the second command which gives the first address to write to, it will auto increment for each value after this, so we will want to use the address of the first digit, which is 0xC0.
 3. Send the data bytes for each display sequentially. This is where you send the byte you want to write to the writeByte function. Do this for each display digit. If you wanted the L in the first 7 segment display and nothing else, you would write 0x38, and then write 0x00 for the other 3 displays.
 4. Break, and then write the third command, which controls the display's pulse width. We want the display ON, so our base value is 0x88. We can then add a value between 0-7 to that to control the brightness of the display. For example, if we want a brightness of 2, we add 2 to 0x88 and get 0x8A. Write this value as the third command.
 5. Lastly, we stop the data transfer, finishing our display.
+
+If you want an example of how to write in fixed address mode rather than auto increment mode, I recommend taking a look at the "Show1" function of the library. Compare it to the "Show" function and the above description, as well as the diagram in the TM1637 datasheet. It should become apparent how this is done.
 
 **If you are still confused about the display, I suggest watching the video for a verbal explanation of the above.**
